@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Coding Portfolio</title>
+  <!-- INSERT BOOTSTRAP CSS LINK HERE -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <nav class="navbar navbar-expand-lg" style="background-color:lavender;">
+    <div class="container-fluid justify-content-around">
+      <button class="btn btn-outline-dark" href="index.html" target="_blank">Home</button>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse flex-grow-0 collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://agathafilter-natopassive.codio.io/index.html" target="_blank">Favorite Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html" target="_blank">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products/products.html" target="_blank">Products</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <!-- modal time -->
+        <div class="modal fade ham" id="modalMain" tabindex="-1" aria-labelledby="modalMainLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialogue">
+                <div class="modal-content">
+                    <div class="modal-header modal-form">
+                        <h1 id="modalMainLabel">hello!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="background-color: lavender;">
+                            <h1>This is my first modal</h1>
+                             <label for="submit-here" class="form-label">I don't know if this will work</label> <!--Trying to make modal work -->
+                             <input type="text" id="trial" name="Did it work:" placeholder="trial" class="focus"><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</head> 
+<body style="background-image: url(sunset.jpg); background-attachment: fixed; background-size: 100% 100%">
+  <header style="background-image: url('galaxy.jpg'); background-attachment:fixed  background-size 100% 100%" class="grid-item header">
+    <h1>My Coding Portfolio</h1>
+    <h3>Abraham Canelo</h3>
+    <h3>Software Developer in Progress</h3>
+  </header>
+  <!--make sure to change layout, experiment -->
+  <main >
+    <img src="media/person.png" alt="Picture of myself" style="width:200px; height:200px;"> <!-- Placeholder for when I take a good picture of myself -->
+    <article class="column">
+      <div class="column-container justify-content">
+        <section class="grid-container">
+          <p>This is a website that will encompass most if not all of my process of becoming a software developer. It's made mostly for employers, but anyone is welcome to view it.</p>
+          <p>My journey into coding began basically when I was first introduced to technology. Seeing how multiple items moved simultaneously and independent of one another fascinated me, and made me want to know how it worked.</p>
+          <p>From then on, I looked for ways to become more involved with technology as a whole. This started off in my middle school years when I was offered a course that focused on technology. Though it involved other fields of technology, such as robotics and basic computer knowledge, it nonetheless fueled my desire to learn more of how technology worked.</p>
+          <p>During my high school years, I became more involved in learning about technology, taking a course involving Adobe programs, as well as a course focused on computer science, where I learned the basics of Python and Java. The year after, I took the continuation of that course and was looking at being certified in Oracle.</p>
+          <p>Sadly, the pandemic of COVID-19 happened, and all of my plans of being certified went up in smoke, since we couldn't meet in person to take the certification test.</p>
+          <p>It wasnt until almost 2 years after I graduated from high school that i started working in Amazon, and it wasn't until a year after that that I learned of the Career Choice program that they offered to employees. After overthinking and missing deadlines of when I could register, I learned of the Software Development course provided by Coorelation One.</p>
+          <p>With little hesitation, and understanding that this would be to better my professional life, I took up the offer and signed up. Although it's been two and a half weeks since the course started, I am confident in myself to overcome any learning obstacles I may face along the way. </p>
+          <p>This is the first of many entries I hope to add to this website. I hope you'll look forward to seeing and hearing of my successes and failures, and how I overcome them.</p>
+          <br>
+          <p>Thank you for your time, <br>Abraham Canelo <i>Updated August 23, 2023</i></p>
+          <br>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer class="grid-item footer">
+    <h2 style="text-align:center; color:white;"> Sign Up Here</h2>
+    <br>
+    <p>If you'd like to recieve updates or contact me, consider signing up to my newsletter!</p>
+    <div class="wrapper ">
+      <input type="text" id="Fname" name="First Name:" placeholder="First Name" class="focus"><br>
+      <input type="text" id="Lname" name="Last Name:" placeholder="Last Name" class="focus"><br>
+      <input type="email" id="email" name="Email:" placeholder="Email" class="focus"><br>
+      <input type="text" id="phone" name="Phone:" placeholder="Phone Number" class="focus"><br>
+      <input type="button" class="hover" onclick="alert('Thank You!')" value="Submit">
+    </div>
+  </footer>
+</body>
+
+</html>

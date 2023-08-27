@@ -1,0 +1,146 @@
+/* main variables */
+main {
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px;
+    border: 2px dashed black;
+    color: black;
+    text-shadow: 2px 4px 2px pink, 2px 4px 3px blue;
+  }
+
+  img {
+    float: right;
+  }
+
+  p {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+  }
+/* wrapper */
+.wrapper{
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+}
+/* hover for button */
+.hover{
+  width: 100px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  border: 2px solid pink;
+  background: transparent;
+  color: pink;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.hover:hover{
+  border-color: mediumorchid;
+  background: mediumorchid;
+  color: black;
+  font-weight: 400;
+  transition: all 0.5s ease-out;
+}
+
+/* focus for text boxes */
+.focus{
+  border-color: white;
+  transition: all 0.5s ease-out;
+}
+
+.focus::placeholder{
+  font-style: italic;
+  color: blue;
+}
+
+.focus:focus{
+  border-color: blue;
+  transition: all 0.5s ease-out;
+}
+
+input{
+  border-radius:10px;
+  border: 2px solid red;
+  padding: 0.3rem;
+  outline: none;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin-block: 2rem;
+} 
+
+h2, h3{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-block: 2rem;
+}
+
+.container, .column{
+  display: flex;
+  flex-direction:column;
+}
+
+.column-container{
+  flex-direction: column;
+  height: max-content;
+}
+
+.column-container.justify-content{
+  height: 1000px;
+  justify-content: center;
+}
+/* grid template areas */
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header header header header header"
+  "main main main main aside-two"
+  "main main main main aside-two"
+  "footer footer footer footer footer";
+  min-height: 80vh;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.header{
+  grid-area: header;
+}
+
+.main{
+  grid-area: main;
+}
+.aside-one{
+  grid-area: aside-one;
+}
+
+.aside-two{
+  grid-area: aside-two;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+  color: cornflowerblue;
+  padding: 20px;
+}
+
+
+.grid-item{
+  padding: 1rem;
+}
+
+/* write media query */
+@media (max-width: 750px){
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+}
