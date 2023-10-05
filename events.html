@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse and Keyboard Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <nav class="navbar navbar-expand-lg" style="background-color:lavender;">
+      <div class="container-fluid justify-content-around">
+        <button class="btn btn-outline-dark" href="index.html" target="_blank">Home</button>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse flex-grow-0 collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="new-page.html" target="_blank">Image Slider</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html" target="_blank">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products/products.html" target="_blank">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dark-mode.html" target="_blank">Dark Mode</a>
+            </li>
+            <li>
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <!-- modal time -->
+          <div class="modal fade ham" id="modalMain" tabindex="-1" aria-labelledby="modalMainLabel" style="display: none;" aria-hidden="true">
+              <div class="modal-dialogue">
+                  <div class="modal-content">
+                      <div class="modal-header modal-form">
+                          <h1 id="modalMainLabel">hello!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <div style="background-color: lavender;">
+                              <h1>This is my first modal</h1>
+                               <label for="submit-here" class="form-label">I don't know if this will work</label> <!--Trying to make modal work -->
+                               <input type="text" id="trial" name="Did it work:" placeholder="trial" class="focus"><br>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <h2>Mouse Events</h2>
+    <div id="my-div" style="width: 100px; height: 100px; background-color: red; margin-bottom: 3rem"></div>
+
+    <h2>Keypress Event</h2>
+    <input type="text" id="my-input" /><br><br>
+    <p id="output"></p>
+
+
+    <script src="events.js"></script>
+  </body>
+</html>
