@@ -1,0 +1,167 @@
+{
+    "q1": {
+        "id": "q1",
+        "question": "Who is the leader of S.H.I.E.L.D.?",
+        "answers": [
+            "Nick Fury",
+            "Tony Stark",
+            "Bruce Banner",
+            "Norman Osborn"
+        ],
+        "correctAnswer": "Nick Fury"
+    },
+    "q2": {
+        "id": "q2",
+        "question": "What was Pixar’s first movie?",
+        "answers": [
+            "Toy Story",
+            "Finding Nemo",
+            "A Bug's Life",
+            "Cars"
+        ],
+        "correctAnswer": "Toy Story"
+    },
+    "q3": {
+        "id": "q3",
+        "question": "What is the name of the city that the Simpsons, the cartoon family, lives?",
+        "answers": [
+            "Springfield",
+            "Des Moines",
+            "Illinois",
+            "Montgomery"
+        ],
+        "correctAnswer": "Springfield"
+    },
+    "q4": {
+        "id": "q4",
+        "question": "Which of the following is the highest-grossing video game franchise to date?",
+        "answers": [
+            "Call of Duty",
+            "Pokemon",
+            "Mario",
+            "Tetris"
+        ],
+        "correctAnswer": "Tetris"
+    },
+    "q5": {
+        "id": "q5",
+        "question": "What is the name of Han Solo’s ship?",
+        "answers": [
+            "The Millenium Falcon",
+            "Slave 1",
+            "The Invisible Hand",
+            "The Death Star"
+        ],
+        "correctAnswer": "Millenium Falcon"
+    },
+    "q6": {
+        "id": "q6",
+        "question": "Which wizard was portrayed by Christopher Lee in 'The Lord Of The Rings'?",
+        "answers": [
+            "Saruman",
+            "Gandalf",
+            "Radagast",
+            "Merlin"
+        ],
+        "correctAnswer": "Saruman"
+    },
+    "q7": {
+        "id": "q7",
+        "question": "Which actor plays the role of Bucky Barnes in the Marvel Cinematic Universe?",
+        "answers": [
+            "Sebastian Stan",
+            "Stellan Skarsgård",
+            "John Slattery",
+            "Jeff Goldblum"
+        ],
+        "correctAnswer": "Sebastian Stan"
+    },
+    "q8": {
+        "id": "q8",
+        "question": "Which film contains the character Jules Winnfield?",
+        "answers": [
+          "A Streetcar Named Desire",
+          "Grease",
+          "Gangs of New York",
+          "Pulp Fiction"
+        ],
+        "correctAnswer": "Pulp Fiction"
+      },
+      "q9": {
+        "id": "q9",
+        "question": "What video game character is the official mascot of Nintendo?",
+        "answers": [
+          "Sonic the Hedgehog",
+          "Mario",
+          "Spyro",
+          "Crash Bandicoot"
+        ],
+        "correctAnswer": "Mario"
+      },
+      "q10": {
+        "id": "q10",
+        "question": "Which U.S. president was asked, but declined, to voice the in-game president character in Fallout 3?",
+        "answers": [
+          "Bill Clinton",
+          "Barack Obama",
+          "George W. Bush",
+          "Donald Trump"
+        ],
+        "correctAnswer": "Bill Clinton"
+      },
+      "q11": {
+        "id": "q11",
+        "question": "What movie revolves around an alien being fostered by a Californian boy?",
+        "answers": [
+          "Blade Runner",
+          "Breakfast Club",
+          "E.T.",
+          "The Martian"
+        ],
+        "correctAnswer": "E.T."
+      },
+      "q12": {
+        "id": "q12",
+        "question": "What are The Simpsons Halloween specials known as?",
+        "answers": [
+          "Spooky Springfield",
+          "The Halloween Haunt",
+          "Evergreen Menace",
+          "Treehouse of Horror"
+        ],
+        "correctAnswer": "Treehouse of Horror"
+      },
+      "q13": {
+        "id": "q13",
+        "question": "Which director directed 'Inglourious Basterds'?",
+        "answers": [
+          "Ridley Scott",
+          "Spike Lee",
+          "Oliver Stone",
+          "Quentin Tarantino"
+        ],
+        "correctAnswer": "Quentin Tarantino"
+      },
+      "q14": {
+        "id": "q14",
+        "question": "Who is associated with the address '221B Baker Street, London'?",
+        "answers": [
+          "Harry Potter",
+          "Charles Dickens",
+          "Sherlock Holmes",
+          "Thomas Hardy"
+        ],
+        "correctAnswer": "Sherlock Holmes"
+      },
+      "q15": {
+        "id": "q15",
+        "question": "What was the name of the talking car in the television show 'Knight Rider'?",
+        "answers": [
+          "HAL",
+          "BENDER",
+          "KITT",
+          "JEEVES"
+        ],
+        "correctAnswer": "KITT"
+      }
+}
