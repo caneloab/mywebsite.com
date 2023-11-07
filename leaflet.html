@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Example</title>
+    <link rel="stylesheet" href="css/leaflet.css">
+<!-- Link to the leaflet stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mode-status">Currently in Light Mode</h2>
+        <label class="toggle-switch">
+          <input type="checkbox" id="mode-toggle">
+          <span class="slider"></span>
+        </label>
+    </div>
+    <!-- Codes how big my map is going to be -->
+    <div id="map" style="width: 1000px; height: 1000px;"></div>
+
+    <script>
+        // code for map location and how zoomed in it is
+        const map = L.map('map').setView([32.783304,-96.805220],
+        16);
+        // Instantiates the tile layer object with a template based on Google Maps
+        L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+            attribution: 'Copyright Google Maps'
+            }).addTo(map);
+
+            // added a marker to my map
+            var marker = L.marker([32.783304,-96.805220]).addTo(map);
+            // Coordinates for some of my favorite spots in Downtown Dallas
+            var latlangs = [
+                [32.783291,-96.805199], 
+                [32.786740,-96.806390],
+                [32.787741, -96.801336], 
+                [32.789865, -96.801160],  
+                [32.781101,-96.798248],
+                [32.7789963,-96.8065296]];
+            //Code for making a red polygon that connects the above coordinates 
+            var polygon = L.polygon(latlangs, {color: 'red', fillOpacity: 0.4, weight: 3}).addTo(map);
+            // Circle that encircles the entirety of the Dallas Zoo
+            var circle = L.circle([32.738325, -96.815817], {radius: 650}).addTo(map);
+
+            var popup = L.popup()
+           .setLatLng([32.7833533, -96.8052366])
+           .setContent("Dallas World Aquarium")
+           .openOn(map);
+            // adds a popup when the marker on top of the Dallas World Aquarium is clicked
+           marker.bindPopup("The Dallas World Aquarium").openPopup();
+        //    Adds a popup when the circle on the Dallas Zoo is clicked
+           circle.bindPopup("<b>It's the Dallas Zoo!</b>");
+        //    Adds a popup when the red polygon is clicked, giving the names of the locations on the corners of the polygon
+           polygon.bindPopup("The Dallas World Aquarium<br>The Perot Museum of Natural Science<br>Dallas Museum of Art<br>Klyde Warren Park<br>Giant Eyeball<br>JFK Memorial Plaza");
+
+            function onMapClick(e) {
+                alert("You clicked the map at" + e.latlng);
+            }
+
+            map.on('click', onMapClick);
+            //places I plan on going to soon 
+            var latlangs2 = [
+                [32.679768, -97.129054], 
+                [32.75506, -97.070279],
+                [32.74841, -97.093306], 
+                [32.789421, -97.346935],
+                [32.740252, -97.363801],
+                [32.72323, -97.35642]  
+            ];
+            // Adds a popup with the name of the name of the places I plan on going to when the pink polygon is clicked
+            var polygon2 = L.polygon(latlangs2, {color: 'pink', fillOpacity: 0.6, weight: 3}).addTo(map);
+            polygon2.bindPopup("Six Flags Over Texas<br>AT&T Stadium<br>Forth Worth Stockyard<br>Japanese Botanical Garden<br>Fort Worth Zoo<br>The Parks Mall")
+            // Coordinates of a random heart shape
+            var latlngs = [
+                [32.973271, -96.699666],
+                [32.984044, -96.692991],
+                [32.984017, -96.670847],
+                [32.9731, -96.658058],
+                [32.983612, -96.645956],
+                [32.983432, -96.623683],
+                [32.972335, -96.614617],
+                [32.923474, -96.659689],
+                [32.973271, -96.699666]
+            ];
+            // Codes lines using the coordinates above as points to connect together
+            var polyline = L.polyline(latlngs, {color: 'black', weight: 6}).addTo(map);
+    </script>
+
+<br><br><p style="text-align: center;">When I finished this project, especially with the coordinate placing for the places I like to go to, it was kind of surprising how close they are to one another.<br>
+    At least, when comparing it to the places I want to go to in the near future. Granted, the places I'm hoping to go to do span two cities.<br>
+    I guess it shouldn't be too surprising, since the downtown of any city usually has most of the cool stuff to look at.</p>
+
+
+
+    <script src="javascript/leaflet.js"></script>
+</body>
+</html>
